@@ -15,5 +15,5 @@ int IsPali(char* str)
     int i=0,j,cnt=0;
     j=strlen(str)-1;
     while(str[i++]==str[j--] && i<=j);
-    return (i<=j)?0:1;
+    return (i>j);
 }
